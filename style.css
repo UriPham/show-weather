@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(cold.jpg) no-repeat center/cover; */
+    align-items: center;
+}
+
+.weather {
+    width: 350px;
+    /* background: url(cold.jpg) no-repeat center/cover; */
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    height: 600px;
+}
+
+.hot {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(hot.png) no-repeat center/cover;
+}
+
+.hot .weather {
+    background: url(hot.png) no-repeat center/cover;
+}
+
+.cold {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(cold.jpg) no-repeat center/cover;
+}
+
+.cold .weather {
+    background: url(cold.jpg) no-repeat center/cover;
+}
+
+.cool {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(cool.jpg) no-repeat center/cover;
+}
+
+.cool .weather {
+    background: url(cool.jpg) no-repeat center/cover;
+}
+
+.warn {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(warn.jpg) no-repeat center/cover;
+}
+
+.warn .weather {
+    background: url(warn.jpg) no-repeat center/cover;
+}
+
+.search {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 1px 15px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+}
+
+.search:focus {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px 1px;
+}
+
+.place {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 40px 0 6px;
+}
+
+.place span {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.time {
+    font-size: 14px;
+}
+
+.temperature {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px 40px;
+    border-radius: 15px;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.temperature span {
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.8);
+}
+
+.short-desc {
+    font-size: 40px;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+.detail-desc {
+    margin: 35px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-desc div  p {
+    padding: 6px 0;
+}
+
+.hide {
+    display: none;
+}
+
